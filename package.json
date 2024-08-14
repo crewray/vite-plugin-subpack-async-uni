@@ -31,6 +31,10 @@
   "author": "crewray",
   "license": "MIT",
   "description": "uniapp小程序分包异步化vite插件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crewray/vite-plugin-subpack-async-uni.git"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^22.2.0",
