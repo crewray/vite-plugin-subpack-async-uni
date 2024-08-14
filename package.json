@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-subpack-async-uni",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "es": "tsc",
+    "build": "rollup -c",
+    "generate": "npm run es && npm run build"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "uniapp",
+    "分包异步化",
+    "小程序分包异步化",
+    "uni-app"
+  ],
+  "author": "crewray",
+  "license": "MIT",
+  "description": "uniapp小程序分包异步化vite插件",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.2.0",
+    "rollup": "^4.20.0",
+    "tslib": "^2.6.3",
+    "vite": "^5.4.0"
+  }
+}
